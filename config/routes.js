@@ -1,25 +1,25 @@
 
 module.exports = function (app, config, passport) {
 
-  app.get("/", function (req, res) {
+  app.get('/', function (req, res) {
     if (req.isAuthenticated()) {
-      res.render("home",
+      res.render('home',
         {
           user: req.user
         });
     } else {
-      res.render("home",
+      res.render('home',
         {
           user: null
         });
     }
   });
 
-  app.get("/login",
+  app.get('/login',
     passport.authenticate(config.passport.strategy,
       {
-        successRedirect: "/",
-        failureRedirect: "/login",
+        successRedirect: '/',
+        failureRedirect: '/login'
       })
   );
 
@@ -34,18 +34,18 @@ module.exports = function (app, config, passport) {
     }
   );
 
-  app.get("/signup", function (req, res) {
-    res.render("signup");
+  app.get('/signup', function (req, res) {
+    res.render('signup');
   });
 
-  app.get("/profile", function (req, res) {
+  app.get('/profile', function (req, res) {
     if (req.isAuthenticated()) {
-      res.render("profile",
+      res.render('profile',
         {
           user: req.user
         });
     } else {
-      res.redirect("/login");
+      res.redirect('/login');
     }
   });
 
