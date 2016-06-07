@@ -7,6 +7,12 @@
     "email": "me@gbraad.nl",
     "url": "http://gbraad.nl"
   },
+  "contributors": [
+    {
+      "name": "Christian Kuster",
+      "email": "git@kusti.ch"
+    }
+  ],
   "keywords": [
     "saml",
     "sso"
@@ -17,16 +23,24 @@
   },
   "scripts": {
     "start": "nodemon app.js",
-    "test": ""
+    "test": "",
+    "postinstall": "bower install"
   },
   "dependencies": {
-    "express": "3.1.0",
-    "jade": "*",
-    "nodemon": "*",
-    "passport": "*",
-    "passport-saml": "*"
+    "body-parser": "1.15.1",
+    "cookie-parser": "1.4.3",
+    "errorhandler": "1.4.3",
+    "express": "4.13.4",
+    "express-session": "1.13.0",
+    "jade": "1.11.0",
+    "method-override": "2.3.6",
+    "morgan": "1.7.0",
+    "nodemon": "1.9.2",
+    "passport": "0.3.2",
+    "passport-saml": "0.15.0"
   },
   "engines": {
-    "node": ">= 0.10.0"
-  }
+    "node": ">= 4.0.0"
+  },
+  "license": "MIT"
 }
