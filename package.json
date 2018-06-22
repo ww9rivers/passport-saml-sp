@@ -1,48 +1,32 @@
 {
-  "name": "passport-saml-example",
-  "version": "0.0.1",
-  "description": "Example for PassportJS SAML strategy",
-  "author": {
-    "name": "Gerard Braad",
-    "email": "me@gbraad.nl",
-    "url": "http://gbraad.nl"
-  },
-  "contributors": [
-    {
-      "name": "Christian Kuster",
-      "email": "git@kusti.ch"
-    }
-  ],
-  "keywords": [
-    "saml",
-    "sso"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gbraad/passport-saml-example.git"
-  },
+  "name": "hits-passport",
+  "version": "1.0.0",
+  "description": "Passport+SAML2 authentication for HITS",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "",
-    "postinstall": "bower install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "hits",
+    "saml",
+    "saml2",
+      "sp",
+      "sso",
+    "auth",
+    "authentication"
+  ],
+  "author": "Wei Wang",
+  "license": "MIT",
   "dependencies": {
-    "body-parser": "1.15.1",
-    "cookie-parser": "1.4.3",
-    "errorhandler": "1.4.3",
-    "express": "4.13.4",
-    "express-session": "1.13.0",
-    "jade": "1.11.0",
-    "morgan": "1.7.0",
-    "nodemon": "1.9.2",
-    "passport": "0.3.2",
-    "passport-saml": "0.15.0"
-  },
-  "devDependencies": {
-    "bower": "1.7.9"
-  },
-  "engines": {
-    "node": ">= 4.0.0"
-  },
-  "license": "MIT"
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "jade": "^1.11.0",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.5",
+    "passport": "^0.4.0",
+    "passport-saml": "^0.33.0"
+  }
 }
